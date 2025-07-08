@@ -7,7 +7,7 @@ updatedAt Date
  */
 
 import mongoose, { Schema } from "mongoose";
-const subcriptionSchema = new Schema(
+const subscriptionSchema = new Schema(
   {
     subscriber: {
       type: Schema.Types.ObjectId,
@@ -20,4 +20,4 @@ const subcriptionSchema = new Schema(
   },
   { timestamps: true }
 );
-export const Subscription = mongoose.model("Subscription", subcriptionSchema);
+export const Subscription = mongoose.model("Subscription", subscriptionSchema);
